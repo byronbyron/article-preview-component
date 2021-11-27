@@ -41,7 +41,7 @@ p {
 
 .card {
     max-width: 327px;
-    margin: 5.5rem auto;
+    margin: 4.625rem auto;
     background-color: var(--white);
     border-radius: 0.5rem;
     overflow: hidden;
@@ -50,25 +50,33 @@ p {
 }
 
 .card-image {
-    background: url(images/drawers.jpg) no-repeat left center var(--dark);
+    display: block;
+    width: 100%;
+    background: url(images/drawers.jpg) no-repeat var(--dark);
+    background-position: 0 25%;
     background-size: cover;
-    padding-top: 61.16207951%; /* 327 / 200 aspect ratio */
+    padding-top: 61.16207951%; /* 200 / 327 aspect ratio */
     opacity: 0.95;
 }
 
+.card-image img {
+    display: none;
+}
+
 .card-body {
-    padding: 2.5rem 2rem;
+    padding: 2.25rem 2rem 1.25rem 2rem;
 }
 
 .post__title {
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.5;
+    margin-bottom: 0.875rem;
 }
 
 .post__body {
     font-size: 0.8125rem;
     max-width: 257px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     color: var(--desaturated-dark-blue);
 }
 
@@ -163,19 +171,20 @@ p {
     }
 
     .card-image {
-        padding-top: 0;
         width: 285px;
         height: 100%;
+        padding-top: 0;
     }
 
     .card-body {
         order: 1;
         width: 445px;
-        padding: 2rem 2.5rem 1.875rem;
+        padding: 2.125rem 2.5rem 1.875rem;
     }
 
     .post__title {
         font-size: 1.25rem;
+        line-height: 1.4;
     }
 
     .post__body {
