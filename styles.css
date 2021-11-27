@@ -57,6 +57,13 @@ p {
     background-size: cover;
     padding-top: 61.16207951%; /* 200 / 327 aspect ratio */
     opacity: 0.95;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.card-image:hover,
+.card-image:focus {
+    transform: scale3d(1.1, 1.1, 1);
+    opacity: 1;
 }
 
 .card-image img {
@@ -65,12 +72,24 @@ p {
 
 .card-body {
     padding: 2.25rem 2rem 1.25rem 2rem;
+    background-color: var(--white);
+    position: relative;
 }
 
 .post__title {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0.875rem;
+}
+
+.post__title a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.post__title a:hover,
+.post__title a:focus {
+    text-decoration: underline;
 }
 
 .post__body {
