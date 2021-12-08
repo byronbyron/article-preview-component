@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 375px;
     min-height: 100vh;
 }
 
